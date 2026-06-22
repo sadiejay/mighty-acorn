@@ -46,3 +46,8 @@ src/
     components/
       alert.astro      # Your documentation page (this is what you'll build)
 ```
+## Development overview
+
+### Resources
+- [Astro’s Client Directives: When and Where to Use Each](https://dev.to/lovestaco/astros-client-directives-when-and-where-to-use-each-165g)
+-
