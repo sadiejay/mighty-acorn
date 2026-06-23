@@ -24,6 +24,61 @@ import {Alert} from '../../components/Alert.tsx'
 
   <!-- Add usage guidance here: when to use each variant, and when not to use this component. -->
 
+  <h3>When to Use the Alert Component</h3>
+  <ul>
+    <li>
+      Status message: An alert notifies user of the status of a process or
+      event.
+    </li>
+    <li>
+      Validation message: An alert validates user of recent action that may be
+      successfully completed or pends correction.
+    </li>
+  </ul>
+
+  <h3>When to Use Each Variant</h3>
+  <ul>
+    <li>
+      <Alert variant="informational" client:load />
+      <ul>
+        <li>Indicates additional (non-essential) information is available</li>
+        <li>Used for: additional information, exceptions</li>
+      </ul>
+    </li>
+    <li>
+      <Alert variant="success" client:load />
+      <ul>
+        <li>Indicates success at the end of a process</li>
+        <li>Used for: success, completion, stability</li>
+      </ul>
+    </li>
+    <li>
+      <Alert variant="warning" client:load />
+      <ul>
+        <li>
+          Indicates the existence of a non-service affecting fault condition
+          requiring corrective action to prevent a more serious fault
+        </li>
+        <li>Used for: caution, prevention, instability</li>
+      </ul>
+    </li>
+    <li>
+      <Alert variant="error" client:load />
+      <ul>
+        <li>Indicates a process failure that needs immediate attention</li>
+        <li>Used for: failed processes, emergencies, urgent alerts</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>When to Use a Different Component</h3>
+  <ul>
+    <li>Interrupt User Expereince: Avoid using when trying to interrupt user expereince, use an alert dialog instead.</li>
+    <li>
+      Insignfignat Content: Avoid using when content is not sigfinigant enough to be highlighted.
+    </li>
+  </ul>
+
   <!-- research guidance on how to use alert -->
 
   <h2>Accessibility</h2>
