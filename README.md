@@ -54,10 +54,11 @@ src/
 - Read up on accessability concerns with alerts and `role=alert`
 - If the alert isn't dymanically generated, could `role` be optional?
 - Changed contrast for alert to make them AAA contrast compliant
+- Added props info table
 
 ### Iteration
 - I would like to make the pages mobile-friendly and responsive
--
+- Would like to clean up styling for the site and documentation page
 
 ### Resources
 - [Astro’s Client Directives: When and Where to Use Each](https://dev.to/lovestaco/astros-client-directives-when-and-where-to-use-each-165g)
