@@ -55,13 +55,16 @@ src/
 - If the alert isn't dymanically generated, could `role` be optional?
 - Changed contrast for alert to make them AAA contrast compliant
 - Added props info table
+- Added light styling for legibility
 
 ### Iteration
-- I would like to make the pages mobile-friendly and responsive
-- Would like to clean up styling for the site and documentation page
+- Would like to make each section of the documentation page into astro components (ex. `intro.astro`, `a11y.astro`, `props.astro`) enabling modular development. That would allow for the `alert.astro` page to contain front matter about the components and `alert.json` page for table information for example.
+- Make the pages mobile-friendly and responsive
+- Refine styling for the site and documentation page
 
 ### Resources
 - [Astro’s Client Directives: When and Where to Use Each](https://dev.to/lovestaco/astros-client-directives-when-and-where-to-use-each-165g)
 - [USWDS Alert Components](https://designsystem.digital.gov/components/alert/)
 - [Status indicators](https://carbondesignsystem.com/patterns/status-indicator-pattern/)
 - [Shop Minis Alert Component](https://shopify.dev/docs/api/shop-minis/components/primitives/alert)
+- [HTML table accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Table_accessibility)
