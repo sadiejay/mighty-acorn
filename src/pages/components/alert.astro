@@ -85,7 +85,19 @@ import {Alert} from '../../components/Alert.tsx'
 
   <!-- Add accessibility notes here: how the component communicates to assistive technologies, and any keyboard interaction requirements. -->
 
-  <!-- spend some time using VO and tabbing, how's contrast for text vs background -->
+  <h3>Conveying meaning to assistive technologies</h3>
+  <ul>
+    <li>
+      Visual indicators like color will not be conveyed to assistive
+      technologies such as screen readers. The `role=alert` is included to the
+      component to add context to priority of the component.
+    </li>
+    <li>
+      The <code>role="alert"</code> is intrusive and should only be used when the
+      user's immediate attention is needed.
+    </li>
+    <li>Keyboard interactions are not required for static alerts.</li>
+  </ul>
 
   <h2>Props</h2>
 
