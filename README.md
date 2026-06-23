@@ -51,6 +51,9 @@ src/
 ### My Process
 - Started with rendering components
 - Looked up usability guidance wording from USWDS, Carbon Design, Shop Minis, and Material UI
+- Read up on accessability concerns with alerts and `role=alert`
+- If the alert isn't dymanically generated, could `role` be optional?
+- Changed contrast for alert to make them AAA contrast compliant
 
 ### Resources
 - [Astro’s Client Directives: When and Where to Use Each](https://dev.to/lovestaco/astros-client-directives-when-and-where-to-use-each-165g)
