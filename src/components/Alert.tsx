@@ -11,30 +11,30 @@ export interface AlertProps {
 
 const variantStyles: Record<AlertVariant, { border: string; background: string; iconColor: string; icon: string; defaultTitle: string }> = {
   informational: {
-    border: '#1a6faf',
+    border: '#135180',
     background: '#e8f1f8',
-    iconColor: '#1a6faf',
+    iconColor: '#135180',
     icon: 'ℹ',
     defaultTitle: 'Information',
   },
   success: {
-    border: '#1b7a3e',
+    border: '#13592E',
     background: '#e9f5ee',
-    iconColor: '#1b7a3e',
+    iconColor: '#13592E',
     icon: '✓',
     defaultTitle: 'Success',
   },
   warning: {
-    border: '#b06000',
+    border: '#733F00',
     background: '#fdf3dc',
-    iconColor: '#b06000',
+    iconColor: '#733F00',
     icon: '⚠',
     defaultTitle: 'Warning',
   },
   error: {
-    border: '#c0392b',
+    border: '#8C291F',
     background: '#fdecea',
-    iconColor: '#c0392b',
+    iconColor: '#8C291F',
     icon: '✕',
     defaultTitle: 'Error',
   },
