@@ -48,6 +48,12 @@ src/
 ```
 ## Development overview
 
+### My Process
+- Started with rendering components
+- Looked up usability guidance wording from USWDS, Carbon Design, Shop Minis, and Material UI
+
 ### Resources
 - [Astro’s Client Directives: When and Where to Use Each](https://dev.to/lovestaco/astros-client-directives-when-and-where-to-use-each-165g)
--
+- [USWDS Alert Components](https://designsystem.digital.gov/components/alert/)
+- [Status indicators](https://carbondesignsystem.com/patterns/status-indicator-pattern/)
+- [Shop Minis Alert Component](https://shopify.dev/docs/api/shop-minis/components/primitives/alert)
