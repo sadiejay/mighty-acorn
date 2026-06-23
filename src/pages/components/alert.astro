@@ -5,164 +5,201 @@ import {Alert} from "../../components/Alert.tsx";
 ---
 
 <DocsLayout title="Alert — CivicKit">
-  <h1>Alert</h1>
+  <section id="intro">
+    <h1>Alert</h1>
 
-  <!-- Add a brief description of the component here. -->
-  A component with an optional custom title, available in four visual variants.
+    <!-- Add a brief description of the component here. -->
+    <p>
+      A component with an optional custom title, available in four visual
+      variants.
+    </p>
+  </section>
 
-  <h2>Examples</h2>
+  <section id="examples">
+    <h2>Examples</h2>
 
-  <!-- Add live rendered examples of each variant here.
+    <!-- Add live rendered examples of each variant here.
        Import and render the Alert component above using client:load if needed. -->
-  <!-- is client load needed for these? -->
-  <Alert variant="informational" />
-  <Alert variant="success" />
-  <Alert variant="warning" />
-  <Alert variant="error" />
+    <!-- is client load needed for these? -->
+    <div class="container">
+      <Alert variant="informational" />
+      <Alert variant="informational" title="Custom Title" />
+    </div>
+    <div class="container">
+      <Alert variant="success" />
+      <Alert variant="success" title="Custom Title" />
+    </div>
+    <div class="container">
+      <Alert variant="warning" />
+      <Alert variant="warning" title="Custom Title" />
+    </div>
+    <div class="container">
+      <Alert variant="error" />
+      <Alert variant="error" title="Custom Title" />
+    </div>
+  </section>
 
-  <h2>Usage</h2>
+  <section id="usage">
+    <h2>Usage</h2>
 
-  <!-- Add usage guidance here: when to use each variant, and when not to use this component. -->
-
-  <h3>When to Use the Alert Component</h3>
-  <ul>
-    <li>
-      Status message: An alert notifies user of the status of a process or
-      event.
-    </li>
-    <li>
-      Validation message: An alert validates user of recent action that may be
-      successfully completed or pends correction.
-    </li>
-  </ul>
-
-  <h3>When to Use Each Variant</h3>
-  <ul>
-    <li>
-      <Alert variant="informational" client:load />
-      <ul>
-        <li>Indicates additional (non-essential) information is available</li>
-        <li>Used for: additional information, exceptions</li>
-      </ul>
-    </li>
-    <li>
-      <Alert variant="success" client:load />
-      <ul>
-        <li>Indicates success at the end of a process</li>
-        <li>Used for: success, completion, stability</li>
-      </ul>
-    </li>
-    <li>
-      <Alert variant="warning" client:load />
+    <!-- Add usage guidance here: when to use each variant, and when not to use this component. -->
+    <div class="container">
+      <h3>When to Use the Alert Component</h3>
       <ul>
         <li>
-          Indicates the existence of a non-service affecting fault condition
-          requiring corrective action to prevent a more serious fault
+          Status message: An alert notifies user of the status of a process or
+          event.
         </li>
-        <li>Used for: caution, prevention, instability</li>
+        <li>
+          Validation message: An alert validates user of recent action that may
+          be successfully completed or pends correction.
+        </li>
       </ul>
-    </li>
-    <li>
-      <Alert variant="error" client:load />
-      <ul>
-        <li>Indicates a process failure that needs immediate attention</li>
-        <li>Used for: failed processes, emergencies, urgent alerts</li>
+    </div>
+    <div class="container">
+      <h3>When to Use Each Variant</h3>
+      <ul class="variant-list">
+        <li>
+          <Alert variant="informational" client:load />
+          <ul class="variant-individual-list">
+            <li>
+              Indicates additional (non-essential) information is available
+            </li>
+            <li>Used for: additional information, exceptions</li>
+          </ul>
+        </li>
+        <li>
+          <Alert variant="success" client:load />
+          <ul class="variant-individual-list">
+            <li>Indicates success at the end of a process</li>
+            <li>Used for: success, completion, stability</li>
+          </ul>
+        </li>
+        <li>
+          <Alert variant="warning" client:load />
+          <ul class="variant-individual-list">
+            <li>
+              Indicates the existence of a non-service affecting fault condition
+              requiring corrective action to prevent a more serious fault
+            </li>
+            <li>Used for: caution, prevention, instability</li>
+          </ul>
+        </li>
+        <li>
+          <Alert variant="error" client:load />
+          <ul class="variant-individual-list">
+            <li>Indicates a process failure that needs immediate attention</li>
+            <li>Used for: failed processes, emergencies, urgent alerts</li>
+          </ul>
+        </li>
       </ul>
-    </li>
-  </ul>
+    </div>
 
-  <h3>When to Use a Different Component</h3>
-  <ul>
-    <li>
-      Interrupt User Flow: Avoid using when trying to interrupt user expereince,
-      use an alert dialog instead.
-    </li>
-    <li>
-      Insignificant Content: Avoid using when content is not significant enough
-      to be highlighted.
-    </li>
-  </ul>
+    <div class="container">
+      <h3>When to Use a Different Component</h3>
+      <ul>
+        <li>
+          Interrupt User Flow: Avoid using when trying to interrupt user's
+          action, use an alert dialog instead.
+        </li>
+        <li>
+          Insignificant Content: Avoid using when content is not significant
+          enough to be highlighted.
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <!-- research guidance on how to use alert -->
 
-  <h2>Accessibility</h2>
+  <section id="a11y">
+    <h2>Accessibility</h2>
 
-  <!-- Add accessibility notes here: how the component communicates to assistive technologies, and any keyboard interaction requirements. -->
+    <!-- Add accessibility notes here: how the component communicates to assistive technologies, and any keyboard interaction requirements. -->
+    <div class="container">
+      <h3>Conveying meaning to assistive technologies</h3>
+      <ul>
+        <li>
+          Visual indicators like color will not be conveyed to assistive
+          technologies such as screen readers. The <code>role=alert</code> is included
+          to the component to add context to priority of the component.
+        </li>
+        <li>
+          The <code>role="alert"</code> is intrusive and should only be used when
+          the user's immediate attention is needed.
+        </li>
+        <li>Keyboard interactions are not required for static alerts.</li>
+      </ul>
+    </div>
+  </section>
 
-  <h3>Conveying meaning to assistive technologies</h3>
-  <ul>
-    <li>
-      Visual indicators like color will not be conveyed to assistive
-      technologies such as screen readers. The `role=alert` is included to the
-      component to add context to priority of the component.
-    </li>
-    <li>
-      The <code>role="alert"</code> is intrusive and should only be used when the
-      user's immediate attention is needed.
-    </li>
-    <li>Keyboard interactions are not required for static alerts.</li>
-  </ul>
+  <section id="props">
+    <h2>Props</h2>
 
-  <h2>Props</h2>
-
-  <table>
-    <tbody>
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Type</th>
-        <th scope="col">Default</th>
-        <th scope="col">Description</th>
-      </tr>
-      <tr>
-        <th scope="row">AlertVariant</th>
-        <td><code>type</code></td>
-        <td>-</td>
-        <td
-          >The visual style and semantic meaning of the alert. Four possible
-          types include: <code>informational</code>,
-          <code>success</code>,
-          <code>warning</code>,
-          <code>error</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">title</th>
-        <td><code>string</code></td>
-        <td>optional</td>
-        <td>Heading displayed above alert message</td>
-      </tr>
-      <tr>
-        <th scope="row">border</th>
-        <td>prop</td>
-        <td>string</td>
-        <td>Defines the border color for the alert</td>
-      </tr>
-      <tr>
-        <th scope="row">background</th>
-        <td>prop</td>
-        <td>string</td>
-        <td>Defines the background color for alert</td>
-      </tr>
-      <tr>
-        <th scope="row">iconColor</th>
-        <td>prop</td>
-        <td>string</td>
-        <td>Defines the icon color for alert</td>
-      </tr>
-      <tr>
-        <th scope="row">icon</th>
-        <td>prop</td>
-        <td>string</td>
-        <td>Defines the icon for alert </td>
-      </tr>
-      <tr>
-        <th scope="row">defaultTitle</th>
-        <td>prop</td>
-        <td>string</td>
-        <td>Defines the default title for the alert</td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="container">
+      <table>
+        <caption>Props for Alert Component</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Default</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">AlertVariant</th>
+            <td><code>type</code></td>
+            <td>-</td>
+            <td
+              >The visual style and semantic meaning of the alert. Four possible
+              types include: <code>informational</code>,
+              <code>success</code>,
+              <code>warning</code>,
+              <code>error</code>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">title</th>
+            <td><code>string</code></td>
+            <td>optional</td>
+            <td>Heading displayed to the right of icon</td>
+          </tr>
+          <tr>
+            <th scope="row">border</th>
+            <td>prop</td>
+            <td>string</td>
+            <td>Defines the border color for the alert</td>
+          </tr>
+          <tr>
+            <th scope="row">background</th>
+            <td>prop</td>
+            <td>string</td>
+            <td>Defines the background color for alert</td>
+          </tr>
+          <tr>
+            <th scope="row">iconColor</th>
+            <td>prop</td>
+            <td>string</td>
+            <td>Defines the icon color for alert</td>
+          </tr>
+          <tr>
+            <th scope="row">icon</th>
+            <td>prop</td>
+            <td>string</td>
+            <td>Defines the icon for alert </td>
+          </tr>
+          <tr>
+            <th scope="row">defaultTitle</th>
+            <td>prop</td>
+            <td>string</td>
+            <td>Defines the default title for the alert</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
   <!-- Add a props/API reference here listing the component's available props. -->
   <!-- walk through line 12 and optional flags-->
